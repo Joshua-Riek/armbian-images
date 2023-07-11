@@ -33,7 +33,7 @@ jobs:
     needs: prepare_release
     strategy:
       matrix:
-        BOARD: [orangepi5]
+        BOARD: [rock-5b]
         DISTRO: [armbian]
         FLAVOR: [ubuntu]
         BRANCH: [legacy]
@@ -41,7 +41,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Upload Armbian image
-        uses: efectn-forks/armbian-compile-action@main
+        uses: Joshua-Riek/armbian-compile-action@main
         if: matrix.DISTRO == 'armbian'
         with:
           branch: ${{ matrix.BRANCH }}
