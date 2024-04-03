@@ -33,7 +33,7 @@ jobs:
     needs: prepare_release
     strategy:
       matrix:
-        BOARD: [orangepi5-plus] 
+        BOARD: [nanopct6lts] 
         DISTRO: [armbian]
         FLAVOR: [ubuntu]
         BRANCH: [legacy]
