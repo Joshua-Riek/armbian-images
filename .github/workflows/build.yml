@@ -33,7 +33,7 @@ jobs:
     needs: prepare_release
     strategy:
       matrix:
-        BOARD: [nanopct6lts] 
+        BOARD: [armsom-sige7] 
         DISTRO: [armbian]
         FLAVOR: [ubuntu]
         BRANCH: [legacy]
