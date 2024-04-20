@@ -33,7 +33,7 @@ jobs:
     needs: prepare_release
     strategy:
       matrix:
-        BOARD: [armsom-sige7] 
+        BOARD: [orangepi5pro] 
         DISTRO: [armbian]
         FLAVOR: [ubuntu]
         BRANCH: [legacy]
